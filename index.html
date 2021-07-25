@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+    <title>TodoList</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="wrapper-logo">
+          <img src="img/logo.svg" alt="Logo" class="logo" />
+        </div>
+
+        <input
+          type="text"
+          class="header__input"
+          placeholder="Search task for to do"
+        />
+      </header>
+      <main>
+        <nav>
+          <ul class="nav__list">
+            <li class="nav__item active" data-action="all">
+              <a href="#">All</a>
+            </li>
+            <li class="nav__item" data-action="active">
+              <a href="#">Active</a>
+            </li>
+            <li class="nav__item" data-action="done">
+              <a href="#">Done</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="new-task">
+          <label for="new-task__area">New Task</label>
+          <textarea
+            name="newTask"
+            id="new-task__area"
+            cols="15"
+            rows="15"
+          ></textarea>
+          <button class="new-task__btn">ADD</button>
+        </div>
+        <div class="task">
+          <ul class="task__list"></ul>
+        </div>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
