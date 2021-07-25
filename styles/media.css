@@ -1,4 +1,7 @@
 @media (max-width: 1440px) {
+  .container {
+    margin-top: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
+  }
   nav {
     height: calc(40px + (50 - 40) * ((100vw - 320px) / (1440 - 320)));
     margin-left: calc(5px + (45 - 5) * ((100vw - 320px) / (1440 - 320)));
